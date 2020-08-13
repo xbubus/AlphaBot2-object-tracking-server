@@ -64,7 +64,8 @@ class Camera(object):
         kernel1 = np.ones((9, 9), np.uint8)
         kernel2 = np.ones((5, 5), np.uint8)
         mask = cv2.erode  (mask, kernel1, iterations=2)
-        self.mask = cv2.dilate (mask, kernel2, iterations=3)
+        mask = cv2.dilate (mask, kernel2, iterations=3)
+        self.mask=mask
         contour_image = np.copy(mask)
         contours, _ = cv2.findContours(contour_image, cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
         circles = [cv2.minEnclosingCircle(cnt) for cnt in contours]
