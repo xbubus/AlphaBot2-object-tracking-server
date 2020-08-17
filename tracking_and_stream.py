@@ -2,6 +2,8 @@ from flask import Flask, render_template, Response
 from camera import Camera
 import cv2
 
+#starts flask server and starts processing camera frames
+
 app=Flask(__name__)
 cam=Camera()
 cap=cam.start()

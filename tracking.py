@@ -1,3 +1,8 @@
+#older one
+#do not provaide live view from robot
+#better use tracking_and_stream.py
+
+
 import numpy as np
 import cv2
 import socket
