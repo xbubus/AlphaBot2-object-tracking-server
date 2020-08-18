@@ -1,5 +1,7 @@
 # AlphaBot2-object-tracking-server
 
+Orange intership task
+
 The object tracking robot is a robot designed to recognize an object using a camera and follow it basing on the received image. The image processing itself can be implemented in many different ways and allocated on different platforms. For example, it can be done directly on the microcontroller controlling the robot, or on a separate microcontroller placed on the robot only for this task. The image from the camera can also be sent (in many ways) to various devices and processed there. Such robot was created to analyse network delays, especially machine’s behaviour during them. Image processing takes place in a virtual machine located in MEC with which the robot communicates.
 
 ![img](https://github.com/xbubus/AlphaBot2-object-tracking-server/blob/master/documentation/communication.png?raw=true)
