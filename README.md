@@ -103,12 +103,12 @@ To run robot do following steps:
 
 6.	If there are import errors simply download missing libraries
 
-      pip3 install <lib-name>
+      pip3 install "lib-name"
 
 7.	Download robot repository on RPi.
 8.	Run mqttControl.py with optional arguments:
 
-      python mqttControl.py  -H <server ip> -gp <gstreamer port> -mp <mqtt port>
+      python mqttControl.py  -H "server ip" -gp "gstreamer port" -mp "mqtt port"
 
       It will create GStreamer subprocess and subscribe to mqtt broker.
 
